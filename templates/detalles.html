@@ -1,0 +1,31 @@
+{% extends"Layout.html"%} {% block container%}
+
+<div class="py-32 relative overflow-x-auto sm:rounded-lg">
+  <a href="#">
+    <img
+      class="rounded-t-lg"
+      src="{{url_for('static',filename='img/usuario.png')}}"
+      alt=""
+    />
+  </a>
+  <div class="p-5">
+    <a href="index"> Volver </a>
+    <p
+      class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+    >
+      Nombre: {{nombre}}
+    </p>
+    <p
+      class="px-6 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+    >
+      Apaternos: {{apaterno}}
+    </p>
+    <p
+      class="px-6 py-3 font-medium text-gray-900 whitespace-nowrap dark:text-white"
+    >
+      Email: {{email}}
+    </p>
+  </div>
+</div>
+
+{%endblock%}
